@@ -1,7 +1,12 @@
 import EditTodo from "@/components/editTodo";
 import { Stack, Typography } from "@mui/material";
+import { Metadata } from "next";
 import React from "react";
-
+export const metadata: Metadata = {
+  title: "Edit Todo | Update Your Task Title",
+  description:
+    "Easily edit your Todo items by updating their titles and details. Keep your task list organized and up-to-date with our simple and intuitive editing interface.",
+};
 function EditTodoPage({ params }: { params: { todoID: string } }) {
   return (
     <Stack
