@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { IconButton, Stack, TextField } from "@mui/material";
 import DoneAllOutlinedIcon from "@mui/icons-material/DoneAllOutlined";
 import useTodoStore from "@/store/store";
@@ -25,10 +25,6 @@ function EditTodo({ todoID }: { todoID: string }) {
     editTodo(updateTodo);
     router.push("/");
   }
-  useEffect(() => {
-    if (!todoItemRef.current) return;
-    todoItemRef.current.focus();
-  }, []);
 
   return (
     <Stack direction={"row"} spacing={1} width={"100%"}>
@@ -53,7 +49,7 @@ function EditTodo({ todoID }: { todoID: string }) {
         }}
         onClick={editTodoHadndler}
       >
-        <DoneAllOutlinedIcon sx={{ color: "#fff" }}/>
+        <DoneAllOutlinedIcon sx={{ color: "#fff" }} />
       </IconButton>
     </Stack>
   );
