@@ -13,7 +13,7 @@ function AddTodo() {
     todoRef.current.value = "";
   };
   return (
-    <Stack direction="row" spacing={1}>
+    <Stack direction="row" spacing={1} width={"100%"} mt={3}>
       <TextField
         id="outlined-size-small"
         size="small"
@@ -25,7 +25,7 @@ function AddTodo() {
         aria-label="add todo"
         sx={{
           bgcolor: "var(--color)",
-          borderRadius: "10px",
+          borderRadius: "4px",
           "&:hover": {
             bgcolor: "var(--color)",
           },

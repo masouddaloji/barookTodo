@@ -11,7 +11,7 @@ function UnDoneTodoList() {
   return (
     <>
       {todos.length > 0 && (
-        <Stack mt={5} spacing={2}>
+        <Stack mt={4} spacing={2} width={"100%"}>
           <Typography
             variant="h5"
             sx={{

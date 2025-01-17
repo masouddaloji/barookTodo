@@ -43,7 +43,7 @@ const theme = createTheme({
         root: {
           padding: "0 8px 0 0",
           marginTop: "0",
-          maxHeight: "30dvh",
+          maxHeight: "27dvh",
           overflowY: "auto",
         },
       },

@@ -11,7 +11,7 @@ function DoneTodoList() {
   return (
     <>
       {todos.length > 0 && (
-        <Stack mt={5}>
+        <Stack mt={4} width={"100%"}>
           <Typography
             variant="h5"
             sx={{

@@ -31,15 +31,7 @@ function EditTodo({ todoID }: { todoID: string }) {
   }, []);
 
   return (
-    <Stack
-      direction={"row"}
-      spacing={1}
-      sx={{
-        bgcolor: "#15101C",
-        borderRadius: "10px",
-        padding: "0.5rem 1rem",
-      }}
-    >
+    <Stack direction={"row"} spacing={1} width={"100%"}>
       <TextField
         id="outlined-size-small"
         size="small"
@@ -53,12 +45,15 @@ function EditTodo({ todoID }: { todoID: string }) {
       <IconButton
         aria-label="edit todo"
         sx={{
-          color: "var(--color)",
-          padding: "4px",
+          bgcolor: "var(--color)",
+          borderRadius: "4px",
+          "&:hover": {
+            bgcolor: "var(--color)",
+          },
         }}
         onClick={editTodoHadndler}
       >
-        <DoneAllOutlinedIcon />
+        <DoneAllOutlinedIcon sx={{ color: "#fff" }}/>
       </IconButton>
     </Stack>
   );
