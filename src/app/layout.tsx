@@ -28,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ThemeProvider theme={theme}>{children}+ </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <main className="todo_wrapper">
+            <div className="todo_container">{children}</div>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
